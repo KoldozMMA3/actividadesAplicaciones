@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+    android:id="@+id/etNota"
+    android:layout_width="371dp"
+    android:layout_height="279dp"
+    android:background="@android:drawable/editbox_background"
+    android:gravity="top"
+    android:hint="Aqui ira la nota"
+    android:inputType="textMultiLine"
+    android:minHeight="100dp" />
+
+    <Button
+        android:id="@+id/btnCorreo"
+        android:text="Compartir por correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:text="Editar de nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
