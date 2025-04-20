@@ -8,7 +8,7 @@ import android.widget.EditText
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class EditorActivity : AppCompatActivity() {
 
     private lateinit var etNota: EditText
     private var notaTexto = ""

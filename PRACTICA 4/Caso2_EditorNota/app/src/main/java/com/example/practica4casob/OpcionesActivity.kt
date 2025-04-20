@@ -23,6 +23,7 @@ class OpcionesActivity : AppCompatActivity() {
         nota = intent.getStringExtra("nota") ?: ""
         tvNota.text = nota
 
+        tvNota.isEnabled = false
         btnCorreo.setOnClickListener {
             Toast.makeText(this, "Compartido por correo", Toast.LENGTH_SHORT).show()
         }
