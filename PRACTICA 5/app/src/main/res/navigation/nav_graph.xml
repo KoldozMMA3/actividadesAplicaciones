@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <!-- Fragmento InicioFragment -->
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.navegacion.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio">
+
+        <!-- Acción para navegar desde InicioFragment a SeleccionComidaFragment -->
+        <action
+            android:id="@+id/action_inicioFragment_to_seleccionComidaFragment"
+            app:destination="@id/seleccionComidaFragment" />
+    </fragment>
+
+    <!-- Fragmento SeleccionComidaFragment -->
+    <fragment
+        android:id="@+id/seleccionComidaFragment"
+        android:name="com.example.navegacion.SeleccionComidaFragment"
+        android:label="Seleccion Comida"
+        tools:layout="@layout/fragment_seleccion_comida">
+        <action
+            android:id="@+id/action_seleccionComidaFragment_to_seleccionExtrasFragment"
+            app:destination="@id/seleccionExtrasFragment" />
+        <action
+            android:id="@+id/action_seleccionComidaFragment_to_resumenPedidoFragment"
+            app:destination="@id/resumenPedidoFragment" />
+    </fragment>
+
+    <!-- Fragmento SeleccionExtrasFragment -->
+    <fragment
+        android:id="@+id/seleccionExtrasFragment"
+        android:name="com.example.navegacion.SeleccionExtrasFragment"
+        android:label="Seleccionar Extras">
+        <action
+            android:id="@+id/action_seleccionExtrasFragment_to_resumenPedidoFragment"
+            app:destination="@id/resumenPedidoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumenPedidoFragment"
+        android:name="com.example.navegacion.ResumenPedidoFragment"
+        android:label="Resumen del Pedido"
+        tools:layout="@layout/fragment_resumen_pedido">
+        <!-- Acción para navegar desde ResumenPedidoFragment a InicioFragment -->
+        <action
+            android:id="@+id/action_resumenPedidoFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+
+</navigation>
