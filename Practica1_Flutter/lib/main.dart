@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mi App Personal',
       theme: ThemeData.light(),
-      home: PantallaInicio(),
+      home: PantallaPerfil(),
     );
   }
 }
